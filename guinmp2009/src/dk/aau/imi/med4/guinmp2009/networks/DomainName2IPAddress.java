@@ -5,7 +5,7 @@ import java.net.UnknownHostException;
 
 public class DomainName2IPAddress {
 	public static void main(String[] args) {
-		String domainName = "www.imi.aau.dk";
+		String domainName = "www.create.aau.dk";
 		InetAddress[] ipAddresses;
 		try {
 			ipAddresses = InetAddress.getAllByName(domainName);
