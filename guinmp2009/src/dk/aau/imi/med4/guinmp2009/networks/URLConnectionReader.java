@@ -5,9 +5,9 @@ import java.io.*;
 
 public class URLConnectionReader {
     public static void main(String[] args) throws Exception {
-        URL yahoo = new URL("http://www.yahoo.com/");
-        URLConnection yahooConnection = yahoo.openConnection();
-        BufferedReader in = new BufferedReader(new InputStreamReader(yahooConnection.getInputStream()));
+        URL url = new URL("http://www.titanmusic.com/");
+        URLConnection connection = url.openConnection();
+        BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
         String inputLine;
         while ((inputLine = in.readLine()) != null) 
             System.out.println(inputLine);
