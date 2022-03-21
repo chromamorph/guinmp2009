@@ -43,7 +43,7 @@ public class MenuDemo implements ActionListener, ItemListener {
                                  KeyEvent.VK_T);
         //menuItem.setMnemonic(KeyEvent.VK_T); //used constructor instead
         menuItem.setAccelerator(KeyStroke.getKeyStroke(
-                KeyEvent.VK_1, ActionEvent.ALT_MASK));
+                KeyEvent.VK_1, ActionEvent.CTRL_MASK));
         menuItem.getAccessibleContext().setAccessibleDescription(
                 "This doesn't really do anything");
         menuItem.addActionListener(this);
@@ -111,7 +111,7 @@ public class MenuDemo implements ActionListener, ItemListener {
         menu.getAccessibleContext().setAccessibleDescription(
                 "This menu does nothing");
         menuBar.add(menu);
-
+        
         return menuBar;
     }
 
@@ -180,6 +180,8 @@ public class MenuDemo implements ActionListener, ItemListener {
      */
     private static void createAndShowGUI() {
         //Create and set up the window.
+//    	System.setProperty("apple.laf.useScreenMenuBar", "true");
+
         JFrame frame = new JFrame("MenuDemo");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 

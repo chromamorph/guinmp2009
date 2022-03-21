@@ -34,9 +34,9 @@ public class BorderLayoutDemo {
                 
                 //We can specify vertical and horizontal gaps between areas
                 //in the content pane as follows
-//                BorderLayout layout = (BorderLayout)(pane.getLayout());
-//                layout.setHgap(10);
-//                layout.setVgap(10);
+                BorderLayout layout = (BorderLayout)(pane.getLayout());
+                layout.setHgap(10);
+                layout.setVgap(10);
 
                 frame.pack();
                 frame.setVisible(true);

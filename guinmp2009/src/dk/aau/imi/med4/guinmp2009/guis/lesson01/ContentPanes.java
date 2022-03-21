@@ -15,9 +15,9 @@ public class ContentPanes {
                 JLabel label2 = new JLabel("Goodbye World");
                 JTextField textField = new JTextField();
                 frame.getContentPane().add(label1);
-                frame.getContentPane().add(label2);
-                frame.getContentPane().add(textField);
-                frame.getContentPane().remove(textField);
+//                frame.getContentPane().add(label2);
+//                frame.getContentPane().add(textField);
+//                frame.getContentPane().remove(textField);
                 frame.pack();
                 frame.setVisible(true);
             }

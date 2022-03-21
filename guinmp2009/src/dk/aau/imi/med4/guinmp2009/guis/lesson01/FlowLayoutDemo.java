@@ -2,6 +2,7 @@ package dk.aau.imi.med4.guinmp2009.guis.lesson01;
 
 import java.awt.BorderLayout;
 import java.awt.Container;
+import java.awt.FlowLayout;
 
 import javax.swing.*;
 
@@ -21,8 +22,8 @@ public class FlowLayoutDemo {
 				JPanel centerPanel = new JPanel();
 				//JPanel's layout manager is FlowLayout by default.
 				
-//				FlowLayout layout = (FlowLayout)centerPanel.getLayout();
-//				layout.setAlignment(FlowLayout.LEFT);
+				FlowLayout layout = (FlowLayout)centerPanel.getLayout();
+				layout.setAlignment(FlowLayout.LEFT);
 //				layout.setHgap(20);
 //				layout.setVgap(20);
 				

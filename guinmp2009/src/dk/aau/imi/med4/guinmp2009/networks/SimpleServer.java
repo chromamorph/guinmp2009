@@ -7,10 +7,11 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class SimpleServer {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
+		ServerSocket ss = null;
 		try {
-			int portNumber = Integer.parseInt(args[0]);
-			ServerSocket ss = new ServerSocket(portNumber);
+			int portNumber = 5000;
+			ss = new ServerSocket(portNumber);
 			while (true) {
 				System.out.println("Waiting for connection request on port " + portNumber + "...");
 				Socket con = ss.accept();
@@ -26,6 +27,8 @@ public class SimpleServer {
 				con.close();
 			}
 		} catch (IOException e) {
+			if (ss != null && ss.isBound() && !ss.isClosed())
+				ss.close();
 			System.err.println(e);
 		}
 	}

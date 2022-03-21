@@ -9,11 +9,11 @@ public class SimpleClient {
 	public static void main(String[] args) {
 		Socket con;
 		try {
-			int portNumber = Integer.parseInt(args[1]);
-			String ipAddress = args[0];
+			int portNumber = 5000;
+			String ipAddress = "127.0.0.1";
 			con = new Socket(ipAddress, portNumber);
 			PrintWriter out = new PrintWriter(con.getOutputStream());
-			out.print(args[2]);
+			out.print("Hello Server!");
 			out.write(0);
 			out.flush();
 			InputStreamReader in = new InputStreamReader(con.getInputStream());

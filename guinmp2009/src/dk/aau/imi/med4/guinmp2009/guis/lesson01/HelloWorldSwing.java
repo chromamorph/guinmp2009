@@ -11,6 +11,7 @@ public class HelloWorldSwing {
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 JLabel label = new JLabel("Hello World");
                 frame.getContentPane().add(label);
+                frame.getContentPane().remove(label);
                 frame.pack();
                 frame.setVisible(true);
             }

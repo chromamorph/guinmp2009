@@ -25,7 +25,7 @@ public class SquareSliders extends JFrame {
 		//Set up the main window frame
 		setTitle("Squaring Sliders");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setResizable(false);
+		setResizable(true);
 		
 		//Initialize the components
 		rootSlider = new JSlider(SwingConstants.VERTICAL,0,100,0);

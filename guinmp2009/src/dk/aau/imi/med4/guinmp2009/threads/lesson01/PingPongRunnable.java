@@ -1,6 +1,6 @@
 package dk.aau.imi.med4.guinmp2009.threads.lesson01;
 
-public class PingPongRunnable implements Runnable {
+public class PingPongRunnable implements Runnable  {
 	private String word;
 	private int delay;
 	
